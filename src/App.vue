@@ -7,9 +7,11 @@ const country = ref("");
 </script>
 
 <template>
-  <div class=" bg-[#202020] flex justify-center items-center flex-col text-white">
+  <div class="text-white">
     <div class="">
-      <h1 class="text-sm" style="margin-bottom: 4px;">Selected: {{ country }}</h1>
+      <h1 class="text-sm" style="margin-bottom: 4px">
+        Selected: {{ country }}
+      </h1>
       <AutoComplete :source="countries" v-model="country" />
     </div>
   </div>
